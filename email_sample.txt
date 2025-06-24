@@ -1,0 +1,153 @@
+DeDelivered-To: akhilamohanr123@gmail.com
+Received: by 2002:a17:505:a7c3:b0:1ce1:d7b9:308a with SMTP id qu3csp2946627njc;
+        Mon, 23 Jun 2025 23:35:44 -0700 (PDT)
+X-Google-Smtp-Source: AGHT+IHgjBl+HgzYd2fBM7cBld4a6ZepUAam37BV6o+HNTNSozZafgSzI1D66PkeW+IYhl8cOJj5
+X-Received: by 2002:a05:6a00:b45:b0:736:4d05:2e2e with SMTP id d2e1a72fcca58-7490d697bcamr23997778b3a.6.1750746944401;
+        Mon, 23 Jun 2025 23:35:44 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1750746944; cv=none;
+        d=google.com; s=arc-20240605;
+        b=jGve/qU2nhjyF4h0GQ56ODJTz8xqOUkgBp1jynAPFdnDZCTOtykgS/vH0f3bUL6ssc
+         kYgtlYy51m+iNpyePh+g0ksEdBwUaLZaeQJp0nMxAj74nsVtnM2VglF9HMJ3pWpBQkWm
+         7ye9cNFo2F25DCI8/BZgoTHOhdkWrgu/vAfQl35q3f/LzyU09dCzTezeyleTJSr9Gt9u
+         pSuAW9F4mfdAJZTOtkY6u58JDilF60liDoA+k2ixzokj3yrfK2IG1SCfnqrYafvEfGu+
+         zHITNXHtvWKjMnwvdjN+H2TDz+ZNmRima4dmIO9n2vdoyNmHruhvPqzgBqBt5AqmDE9C
+         7orA==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20240605;
+        h=mime-version:to:reply-to:from:subject:date:dkim-signature
+         :dkim-signature:message-id;
+        bh=61L8JxjafwgYUzVg2NMDJQFmcUPJYCwJmmOD+nn7nkA=;
+        fh=1CTK50YkBD1tbSbxjFNRlqCYg4/rHbB+nyoixOIQAUE=;
+        b=SUt8d0VCGlLC0O5xyXtaQno20f1plOe/Yx8T+yGdqfgqRd2mWCu1ev7+MLefRzduSC
+         B74SzGTT3dI1FGYlngZ+1lZzZhygRP+sRbef6KFrfOTnaUtSaRBc8sA5tqX2XSotZaxP
+         Svbss5D3Ss4CgbHqcOhnMlTi9bKO7kOnlLlk0XBXfiwgHM50cD946kzchkzTBtcR1qpy
+         m0v/YU2hrCLriU/z2BJe8mKOoXAm4FnnFwMP2Ob3lLJrmXGBXmQDiL+ilTTLNj9Yu8M/
+         7Lzf5pwSUIoTI8arFZNnFXHRCkEjyVUZUYfEea4V3QhiPhc2PBCNIBGjvE3nBdMIFl6k
+         sVFg==;
+        dara=google.com
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@mc.tracksmails.com header.s=default header.b=Ca1ZGspO;
+       dkim=pass header.i=@mail.mc.tracksmails.com header.s=mail header.b="DA/HFcdl";
+       spf=pass (google.com: domain of newsletter-akhilamohanr123=gmail.com@mail.mc.tracksmails.com designates 216.117.134.156 as permitted sender) smtp.mailfrom="newsletter-akhilamohanr123=gmail.com@mail.mc.tracksmails.com"
+Return-Path: <newsletter-akhilamohanr123=gmail.com@mail.mc.tracksmails.com>
+Received: from mail.mc.tracksmails.com (mail.mc.tracksmails.com. [216.117.134.156])
+        by mx.google.com with ESMTPS id 41be03b00d2f7-b31f12a02d8si12365113a12.276.2025.06.23.23.35.43
+        for <akhilamohanr123@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-ECDSA-AES128-GCM-SHA256 bits=128/128);
+        Mon, 23 Jun 2025 23:35:44 -0700 (PDT)
+Received-SPF: pass (google.com: domain of newsletter-akhilamohanr123=gmail.com@mail.mc.tracksmails.com designates 216.117.134.156 as permitted sender) client-ip=216.117.134.156;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@mc.tracksmails.com header.s=default header.b=Ca1ZGspO;
+       dkim=pass header.i=@mail.mc.tracksmails.com header.s=mail header.b="DA/HFcdl";
+       spf=pass (google.com: domain of newsletter-akhilamohanr123=gmail.com@mail.mc.tracksmails.com designates 216.117.134.156 as permitted sender) smtp.mailfrom="newsletter-akhilamohanr123=gmail.com@mail.mc.tracksmails.com"
+Message-ID: <685a4740.630a0220.174daa.21eaSMTPIN_ADDED_MISSING@mx.google.com>
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; s=default; d=mc.tracksmails.com; h=Date:Subject:From:Reply-To:To:MIME-Version:Content-Type; i=newsletter@mc.tracksmails.com; bh=61L8JxjafwgYUzVg2NMDJQFmcUPJYCwJmmOD+nn7nkA=; b=Ca1ZGspOVu8wN7csuQgSEK15tbprXdw8VC5tayqP87gpFt4Xn7+rw7Ok3XfcRGteBZJ/A0NHAtE8
+   mtEOl/KZWD6yEysCMmwFgoVY+cn6fR3Jvhn+daNP89IgJ9vjjmzkvK3uVeSxusz9KrmQqWfTUv66
+   Q2i/4ZQQ2D6hrgzCfA4=
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; s=mail; d=mail.mc.tracksmails.com; h=Date:Subject:From:Reply-To:To:MIME-Version:Content-Type; bh=61L8JxjafwgYUzVg2NMDJQFmcUPJYCwJmmOD+nn7nkA=; b=DA/HFcdlLuB3pEEg7+5mnnAomSZraFGQHm+LeqzbdkTJf0MN6foE3fK6ddubo1kH7s6b91s07IbH
+   rIQ6lOZSY/ItuYi9+bZMi+eoo/Ew0xc381Ox5ol2M9bBTOsJJH4KOnJqebY+a0w5E+oECob6q3zq
+   Z/9NLyLZ52QR2M0MuGI=
+Return-Path: <newsletter@mail.mc.tracksmails.com>
+Date: Tue, 24 Jun 2025 06:15:10 +0000
+Subject: Do this work immediately, otherwise your bank locker may be sealed!
+From: Bank Locker New Update <newsletter@mc.tracksmails.com>
+Reply-To: Bank Locker New Update <newsletter@mc.tracksmails.com>
+To: "akhilamohanr123@gmail.com" <akhilamohanr123@gmail.com>
+MIME-Version: 1.0
+Content-Type: multipart/alternative; boundary="_=_swift_1750745710_917a84e1c52a810e5ce5d3b61ede0e6c_=_"
+
+--_=_swift_1750745710_917a84e1c52a810e5ce5d3b61ede0e6c_=_
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+=20
+
+DO THIS WORK IMMEDIATELY, OTHERWISE YOUR BANK LOCKER MAY BE SEALED!=20
+If you have a locker in the bank and you have not yet signed a new
+locker agreement, then be careful. RBI=E2=80=99s deadline to sign the locke=
+r
+contract is over and taking action, many banks have sealed the lockers
+of such customers.=20
+FOR MORE INFORMATION -=C2=A0Click Here=C2=A0
+[http://t.mc.tracksmails.com/index.php/campaigns/sx3271v29pd34/track-url/of=
+935oakmg70e/09a4e3642bf10dbbc025f5ff89444f700025d8e7]
+
+
+Unsubscribe
+[http://t.mc.tracksmails.com/index.php/campaigns/sx3271v29pd34/track-url/of=
+935oakmg70e/0b5eb814f8b618af8e33bf623c1c6cde1a96eaed]
+=20
+
+--_=_swift_1750745710_917a84e1c52a810e5ce5d3b61ede0e6c_=_
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html>
+<?xml encoding=3D3D"utf-8" ?>
+<html>
+<head><meta name=3D"charset" content=3D"utf-8">
+=09<title>Do this work immediately, otherwise your bank locker may be seale=
+d!</title>
+</head>
+<body>
+<div style=3D"margin:0 auto;display:table;width:650px;">
+<div style=3D"margin:0 auto;display:table;">
+<div style=3D"margin: 0px auto; padding: 0px; display: table; line-height: =
+45px; font-size: 11px; font-family: arial; color: rgb(95, 95, 95); text-ali=
+gn: center;"><strong><span style=3D"font-size:18px;"><span style=3D"font-fa=
+mily:Arial,Helvetica,sans-serif;">Do this work immediately, otherwise your =
+bank locker may be sealed!</span></span></strong></div>
+
+<div style=3D"margin: 0px auto; padding: 0px; display: table; line-height: =
+45px; font-size: 11px; font-family: arial; color: rgb(95, 95, 95);"><span s=
+tyle=3D"font-size:14px;"><span style=3D"font-family:Arial,Helvetica,sans-se=
+rif;">If you have a locker in the bank and you have not yet signed a new lo=
+cker agreement, then be careful. RBI=E2=80=99s deadline to sign the locker =
+contract is over and taking action, many banks have sealed the lockers of s=
+uch customers.</span></span></div>
+
+<div style=3D"margin: 0px auto; padding: 0px; display: table; line-height: =
+45px; font-size: 11px; font-family: arial; color: rgb(95, 95, 95); text-ali=
+gn: center;"><a href=3D"http://t.mc.tracksmails.com/index.php/campaigns/sx3=
+271v29pd34/track-url/of935oakmg70e/09a4e3642bf10dbbc025f5ff89444f700025d8e7=
+" style=3D"text-decoration:none;"><span style=3D"color:#f39c12;"><strong><s=
+pan style=3D"font-size:16px;"><span style=3D"font-family:Arial,Helvetica,sa=
+ns-serif;">For More Information -=C2=A0</span></span></strong></span><span =
+style=3D"font-size:16px;"><u>Click Here=C2=A0</u></span></a></div>
+</div>
+</div>
+<p align=3D"center"><br /><a data-unsubtag=3D"_UNSUBSCRIBE_URL_" href=3D"ht=
+tp://t.mc.tracksmails.com/index.php/campaigns/sx3271v29pd34/track-url/of935=
+oakmg70e/0b5eb814f8b618af8e33bf623c1c6cde1a96eaed" target=3D"_blank" rel=3D=
+"noreferrer noopener">Unsubscribe</a></p>
+
+<img width=3D"1" height=3D"1" src=3D"http://t.mc.tracksmails.com/index.php/=
+campaigns/sx3271v29pd34/track-opening/of935oakmg70e" alt=3D"" />
+</body>
+</html>
+
+--_=_swift_1750745710_917a84e1c52a810e5ce5d3b61ede0e6c_=_--livered-To: akhila@example.com
+Return-Path: <support@paypal-security.com>
+Received: from mail.paypal-security.com (192.0.2.25)
+Date: Tue, 18 Jun 2025 08:42:10 +0000
+From: PayPal Support <support@paypal-security.com>
+To: akhila@example.com
+Subject: [Action Required] Your PayPal Account is Limited
+MIME-Version: 1.0
+Content-Type: text/html
+
+<html>
+  <body>
+    <p>Dear Customer,</p>
+
+    <p>We’ve noticed some unusual activity in your PayPal account. For your protection, access to your account has been temporarily limited.</p>
+
+    <p>Please click the link below to verify your account information:</p>
+
+    <p>
+      <a href="http://paypal-resolution-center.com/login" target="_blank">https://www.paypal.com/verify</a>
+    </p>
+
+    <p>If you do not respond within 24 hours, your account access may be permanently limited.</p>
+
+    <p>Thank you,<br>
+  
